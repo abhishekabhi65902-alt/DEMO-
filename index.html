@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173f38" />
+    <title>CCL InternConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="brand-panel" aria-label="Central Coalfields Limited introduction">
+        <div class="brand-topline"><span class="coal-mark">CCL</span><span>Central Coalfields Limited</span></div>
+        <div class="brand-copy">
+          <p class="eyebrow">Internship student portal</p>
+          <h1>Start where<br /><em>energy</em> begins.</h1>
+          <p class="intro">A focused space for CCL interns to learn, contribute and build a future powered by purpose.</p>
+        </div>
+        <div class="brand-footer">
+          <span class="status-dot"></span>
+          <span>Building India's energy future since 1975</span>
+        </div>
+      </section>
+
+      <section class="form-panel">
+        <div class="form-wrap" id="authView">
+          <div class="mobile-brand"><span class="coal-mark">CCL</span><span>Central Coalfields Limited</span></div>
+          <div class="form-heading">
+            <span class="section-label">Student access</span>
+            <h2 id="formTitle">Welcome back</h2>
+            <p id="formSubtitle">Sign in to continue your internship journey.</p>
+          </div>
+
+          <div class="mode-switch" role="tablist" aria-label="Account access">
+            <button class="mode-btn active" data-mode="login" role="tab" aria-selected="true">Sign in</button>
+            <button class="mode-btn" data-mode="register" role="tab" aria-selected="false">Create account</button>
+          </div>
+
+          <form id="authForm" novalidate>
+            <div class="field register-only hidden-field">
+              <label for="studentName">Full name</label>
+              <input id="studentName" name="studentName" type="text" autocomplete="name" placeholder="e.g. Aditi Kumar" />
+            </div>
+            <div class="field">
+              <label for="email">College email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@college.edu" required />
+            </div>
+            <div class="field">
+              <div class="label-row"><label for="password">Password</label><button type="button" class="text-button" id="togglePassword">Show</button></div>
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required />
+            </div>
+            <div class="register-only hidden-field field">
+              <label for="course">Course / department</label>
+              <input id="course" name="course" type="text" placeholder="e.g. Mining Engineering" />
+            </div>
+            <div class="form-options" id="loginOptions">
+              <label class="check-label"><input type="checkbox" id="remember" /> <span>Remember me</span></label>
+              <button type="button" class="text-button" id="demoFill">Use demo access</button>
+            </div>
+            <button class="primary-button" type="submit"><span id="submitText">Enter InternConnect</span><span class="arrow">↗</span></button>
+            <p class="form-message" id="formMessage" role="status"></p>
+          </form>
+          <p class="privacy-note">Demo project · Student records are saved securely in the connected database.</p>
+        </div>
+
+        <div class="dashboard hidden" id="dashboardView">
+          <div class="dashboard-header"><div><span class="section-label">InternConnect</span><h2 id="welcomeName">Good morning</h2></div><button class="logout-button" id="logoutButton">Sign out <span>↗</span></button></div>
+          <div class="welcome-banner"><div><span class="banner-kicker">Your internship workspace</span><h3>Keep the momentum going.</h3><p>Track your learning, tasks and upcoming CCL milestones in one place.</p></div><div class="banner-number">01</div></div>
+          <div class="stats-grid"><div class="stat-card"><span class="stat-label">Learning progress</span><strong>68%</strong><div class="progress"><span></span></div><small>3 of 5 modules complete</small></div><div class="stat-card accent-card"><span class="stat-label">Next milestone</span><strong>12<span class="unit"> days</span></strong><small>Field orientation · 26 Sep</small></div><div class="stat-card"><span class="stat-label">Current track</span><strong class="track-name" id="trackName">Mining</strong><small>CCL Internship 2026</small></div></div>
+          <div class="dashboard-section"><div class="section-heading"><h3>Internship checklist</h3><span>2 / 4 done</span></div><div class="checklist"><div class="check-item done"><span class="check-icon">✓</span><span>Complete onboarding profile</span><small>Done</small></div><div class="check-item done"><span class="check-icon">✓</span><span>Upload college ID card</span><small>Done</small></div><div class="check-item"><span class="check-icon"></span><span>Attend safety briefing</span><small>Upcoming</small></div><div class="check-item"><span class="check-icon"></span><span>Meet your industry mentor</span><small>Upcoming</small></div></div></div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
