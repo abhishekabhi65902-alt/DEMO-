@@ -31,3 +31,19 @@ The server creates the `students` table on startup and seeds this demo account:
 - `POST /api/login` checks the email and password against Neon.
 
 For production, replace the demo's local browser session marker with a secure, HTTP-only cookie session or an established auth provider. Never commit `.env` or expose `DATABASE_URL` in frontend code.
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Smart Agriculture Platform</h1>
+        <p>AI-powered tools for better crop management.</p>
+        <button>Explore Now</button>
+    </div>
+
+    <div class="hero-visual">
+        <div class="circle"></div>
+        <div class="card">🌱 Crop Health</div>
+        <div class="card">☁️ Weather</div>
+        <div class="card">📊 Analytics</div>
+    </div>
+</section>
